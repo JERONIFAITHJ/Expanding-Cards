@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(rgba(108, 210, 158, 0.589), rgb(57, 207, 200));
+}
+p{
+    font-weight: 400;
+    font-size: 18px;
+}
+.parent-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.card-container{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}
+#card-1{
+    background-image: url('explore.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#card-2{
+    background-image: url('hike.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#card-3{
+    background-image: url('aurora.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#card-4{
+    background-image: url('uncovered.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#card-5{
+    background-image: url('back.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.card{
+    height: 70vh;
+    min-width: 5vw;
+    /* border: 1px solid; */
+    border-radius: 40px;
+    position: relative;
+}
+.card-container .card p{
+    position: absolute;
+    bottom: 30px;
+    left: 25px;
+    opacity: 0;
+}
+.card:hover{
+    cursor: pointer;
+}
+.active{
+    flex: 1;
+    transition: 0.5s ease-out;
+}
+.active:hover{
+    outline: 5px solid rgba(194, 195, 194, 0.812);
+}
+.active p{
+    opacity: 1 !important;
+    color: beige;
+    transition: opacity 2s linear;
+}
